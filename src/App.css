@@ -1,0 +1,33 @@
+html,
+body,
+#root {
+    margin: 0;
+    padding: 0;
+    width: 100vw;
+    height: 100vh;
+    background: transparent;
+    overflow: hidden;
+}
+
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr); /* или сколько нужно */
+    grid-template-rows: repeat(5, 1fr);
+    background-color: rgba(0, 0, 0, 0.3);
+    z-index: 9999;
+}
+
+.grid-cell {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 4rem;
+    font-weight: bold;
+    color: white;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
